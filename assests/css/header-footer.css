@@ -1,0 +1,17 @@
+/* General */
+.container{
+    width: 1200px;
+}
+/* Header start */
+header{
+    padding: 20px;
+}
+header, header .header-right, header .header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .header-logo img{
+    width: 130px;
+}
+/* Header end */

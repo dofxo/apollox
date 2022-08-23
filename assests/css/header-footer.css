@@ -1,17 +1,40 @@
 /* General */
-.container{
+
+.container {
     width: 1200px;
 }
-/* Header start */
-header{
-    padding: 20px;
+a{
+    text-decoration: none;
 }
-header, header .header-right, header .header-left{
+/* header start */
+/* header general changes*/
+header {
+    vertical-align: middle;
+    padding: 20px;
+    /* align-items: center; */
+}
+header,
+header .header-right,
+header .header-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
-header .header-logo img{
+/* header general changes end*/
+/* header left */
+.header-left .cex-dex-btns div{
+    display: inline-block;
+}
+header .header-logo img {
     width: 130px;
 }
+
+/* header left end */
+/* header right start */
+.header-right > div > div{
+    display: inline-block;
+}
+
+/* header right end */
 /* Header end */

@@ -1,0 +1,13 @@
+*{
+    font-family: "roboto",Arial, Helvetica, sans-serif !important;
+}
+@font-face{
+    font-family: "roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}

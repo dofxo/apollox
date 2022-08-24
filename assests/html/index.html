@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/css reset.css">
     <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../icons/boxicons/css/boxicons.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,22 @@
 <body>
     <!-- Header start -->
     <header>
+        <!-- header left start -->
         <div class="header-left">
             <div class="header-logo">
+                <!-- logo -->
                 <img src="../images/indexImages/logo.svg" alt="logo">
             </div>
             <div class="cex-dex-btns">
+                <!-- CEX-DEX buttons -->
                 <div><a href="#">CEX</a></div>
                 <div><a href="#">DEX</a></div>
             </div>
+            <!-- main menu start -->
             <div class="header-main-menu">
                 <ul>
-                    <li><a href="#">Markets</a></li>
-                    <li><a href="#">Convert</a></li>
+                    <li><a href="markets.html" target="_blank">Markets</a></li>
+                    <li><a href="convert.html" target="_blank">Convert</a></li>
                     <li><a href="#">Futures</a></li>
                     <li>
                         <a href="#" class="has-drop-down">Information</a>
@@ -44,24 +49,26 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="has-drop-down">Bonus
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="css-1st3zg5"><path d="M14.5 10.29a1 1 0 011 1v.353a1 1 0 01-.273.686l-2.5 2.65a1 1 0 01-1.454 0l-2.5-2.65a1 1 0 01-.273-.686v-.353a1 1 0 011-1h5z"></path></svg>
-
-                        </a>
+                        <a href="#" class="has-drop-down">Bonus</a>
                         <ul>
                             <li><a href="#">Onboarding Hub</a></li>
-                            <li><a href="#">Referral</a></li>
+                            <li><a href="invite.html" target="_blank">Referral</a></li>
                             <li><a href="#">Reward Center</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <!-- main menu END -->
         </div>
+        <!-- header left END-->
+        <!-- header right start -->
         <div class="header-right">
+            <!-- register part -->
             <div class="header-register">
                 <div>Log In</div>
                 <div>Register</div>
             </div>
+            <!-- download button -->
             <div class="header-right-download">Download
                 <div class="header-right-download-qr-code-box">
                     <div class="header-right-download-qr-code">
@@ -70,15 +77,61 @@
                     <p>Scan to download app</p>
                 </div>
             </div>
+            <!-- language currency -->
             <div class="language-currency">
                 <div>English</div>
                 <div class="language-currency-line"></div>
                 <div>USD</div>
+
             </div>
+            <!-- hamburger-menu start -->
+            <!-- icon for the menu -->
+            <div id="hamburger-menu-icon">
+
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+            <!-- the actual menu -->
+            <div id="hamburger-menu">
+                <div class="container">
+                    <div id="close-icon">
+                        <i class='bx bx-x close-icon'></i>
+                    </div>
+                    <ul id="hamburger-menu-register">
+
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Register</a></li>
+
+
+
+                    </ul>
+                    <ul id="hamburger-main-menu">
+                        <li><i class='bx bx-buildings'></i><a href="markets.html">Markets</a></li>
+                        <li><i class='bx bx-rotate-right'></i><a href="convert.html">Convert</a></li>
+                        <li><i class='bx bx-chart'></i><a href="#">Futures</a></li>
+                        <li><i class='bx bx-line-chart'></i><a href="#">Information</a></li>
+                        <li> <i class='bx bx-loader-circle'></i><a href="#">Bonus</a></li>
+                    </ul>
+                    <ul id="hamburger-menu-language-currency">
+                        <li></li>
+                        <li><i class='bx bx-world'></i><a href="#"> English</a></li>
+                        <li><i class='bx bx-dollar-circle'></i><a href="#">USD</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <!-- hamburger-menu END -->
         </div>
+        <!-- header right END-->
+
 
     </header>
     <!-- Header end -->
 </body>
+<!-- js links -->
+<script src="../js/header-footer.js"></script>
 
 </html>

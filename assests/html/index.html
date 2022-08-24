@@ -3,8 +3,10 @@
 
 <head>
     <!-- icon -->
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="icon" href="../images/indexImages/favicon.ico">
     <!-- css links -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../webfonts/fa-solid-900.ttf">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/css reset.css">
@@ -21,11 +23,11 @@
     <header>
         <div class="header-left">
             <div class="header-logo">
-                <img src="../images/logo.svg" alt="logo">
+                <img src="../images/indexImages/logo.svg" alt="logo">
             </div>
             <div class="cex-dex-btns">
-                <div>CEX</div>
-                <div>DEX</div>
+                <div><a href="#">CEX</a></div>
+                <div><a href="#">DEX</a></div>
             </div>
             <div class="header-main-menu">
                 <ul>
@@ -33,7 +35,7 @@
                     <li><a href="#">Convert</a></li>
                     <li><a href="#">Futures</a></li>
                     <li>
-                        <a href="#">information</a>
+                        <a href="#" class="has-drop-down">Information</a>
                         <ul>
                             <li><a href="#">Guide</a></li>
                             <li><a href="#">Real-Time Funding Rate</a></li>
@@ -42,7 +44,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Bonus</a>
+                        <a href="#" class="has-drop-down">Bonus
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="css-1st3zg5"><path d="M14.5 10.29a1 1 0 011 1v.353a1 1 0 01-.273.686l-2.5 2.65a1 1 0 01-1.454 0l-2.5-2.65a1 1 0 01-.273-.686v-.353a1 1 0 011-1h5z"></path></svg>
+
+                        </a>
                         <ul>
                             <li><a href="#">Onboarding Hub</a></li>
                             <li><a href="#">Referral</a></li>
@@ -54,12 +59,20 @@
         </div>
         <div class="header-right">
             <div class="header-register">
-                <div>Login</div>
+                <div>Log In</div>
                 <div>Register</div>
-                <div>Download</div>
+            </div>
+            <div class="header-right-download">Download
+                <div class="header-right-download-qr-code-box">
+                    <div class="header-right-download-qr-code">
+                        <img src="../images/indexImages/qr-code.jpg" alt="qrcode">
+                    </div>
+                    <p>Scan to download app</p>
+                </div>
             </div>
             <div class="language-currency">
                 <div>English</div>
+                <div class="language-currency-line"></div>
                 <div>USD</div>
             </div>
         </div>

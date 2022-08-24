@@ -1,40 +1,210 @@
 /* General */
+body {
+    background-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 .container {
     width: 1200px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* header start */
 /* header general changes*/
+/* header:not(
+    .header-logo img
+){
+    opacity: .8;
+} */
 header {
-    vertical-align: middle;
-    padding: 20px;
-    /* align-items: center; */
+    background-color: rgb(68, 68, 68);
+    padding: 15px 0;
 }
+
+.header-left a,
+.header-right div {
+    color: white;
+    font-size: 14px;
+}
+
+.header-left a:hover:not(.cex-dex-btns div a,.header-main-menu>ul>li>ul>li a),
+.header-right-download:hover,
+.header-register div:hover:not(.header-register div:nth-child(2)),
+.language-currency div:hover{
+    cursor: pointer;
+    color: rgb(126, 154, 255);
+}
+
 header,
 header .header-right,
 header .header-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    padding-left: 13px;
+    padding-right: 16px;
 }
+
 /* header general changes end*/
 /* header left */
-.header-left .cex-dex-btns div{
-    display: inline-block;
-}
 header .header-logo img {
-    width: 130px;
+    width: 140px;
+
 }
 
+/* cex-dex-btns start*/
+.header-left .cex-dex-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid #3B3D59;
+    border-radius: 5px;
+}
+
+.header-left .cex-dex-btns div {
+    /* display: inline-block; */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-left .cex-dex-btns div:first-of-type {
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+.header-left .cex-dex-btns div:last-of-type:hover {
+    background-color: #2D2E3F;
+}
+
+
+/* cex-dex-btns start end*/
+/* header main start */
+/* level 1 start*/
+.header-main-menu>ul {
+    display: flex;
+}
+
+.header-main-menu>ul>li {
+    padding-right: 20px;
+    position: relative;
+}
+
+.header-main-menu .has-drop-down svg {
+    width: 18px;
+    margin-left: -3px;
+    vertical-align: middle;
+    color: #72768F;
+}
+
+/* level 1 end */
+/* dropdown level 2 start */
+.header-main-menu>ul>li>ul {
+    display: flex;
+    flex-direction: column;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    top: 216%;
+    position: absolute;
+    width: 200px;
+    background-color:#1e1f31;
+
+    visibility: hidden;
+    opacity: 0;
+}
+.header-main-menu>ul>li:hover>ul{
+  
+    visibility: visible;
+    opacity: 1;
+  
+}
+.header-main-menu>ul>li>ul>li{
+    padding: 20px;
+}
+.header-main-menu>ul>li>ul>li:hover{
+    cursor: pointer;
+    background-color: #232531;
+
+}
+.header-main-menu>ul>li>ul svg{
+    width: 12px;
+    
+}
+/* dropdown level 2 end */
+
+/* header main end */
 /* header left end */
 /* header right start */
-.header-right > div > div{
+
+.header-right>div>div {
     display: inline-block;
 }
 
+/* register start*/
+.header-right .header-register div {
+    margin-right: 20px;
+}
+
+.header-right .header-register>div:nth-child(2) {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-image: linear-gradient(93.96deg, rgb(224, 95, 187) 0.76%, rgb(66, 80, 244) 100.57%);
+}
+
+.header-right .header-register>div:nth-child(2):hover {
+    background-image: linear-gradient(94.64deg, rgb(224, 141, 228) -19.85%, rgb(77, 81, 227) 100%);
+}
+
+/* register end */
+/* header-right-download start */
+.header-right-download{
+    position: relative;
+}
+.header-right-download .header-right-download-qr-code-box{
+    width: 200px;
+    height: 250px;
+    background-color: #1e1f31;
+    top:275%;
+    right: 0;
+    position: absolute;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s .2s;
+}
+.header-right-download:hover .header-right-download-qr-code-box{
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-right-download-qr-code img{
+    width: 170px;
+}
+
+/* header-right-download end */
+/* language-currency start */
+.language-currency .language-currency-line {
+    vertical-align: middle;
+    width: 1px;
+    height: 13px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #5A5C74;
+}
+
+/* language-currency end */
 /* header right end */
 /* Header end */

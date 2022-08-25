@@ -1,6 +1,8 @@
 body {
 
-    background: linear-gradient(to bottom, #171822, #252635);
+
+    background: linear-gradient(190deg, #161623,
+            #161624);
 
 }
 
@@ -12,13 +14,15 @@ body {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-
 }
 
 #markets-top {
     color: white;
     font-size: 60px;
     font-weight: bold;
+    background: -webkit-linear-gradient(50deg, #ffffffde, #f477ff69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -68,7 +72,7 @@ body {
 }
 
 #right-section {
-    background: #ffffff40;
+    background: #ffffff27;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +90,7 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    color: #ffffff7c;
+    color: #ffffff57;
     font-size: 15px;
 }
 
@@ -127,7 +131,299 @@ body {
         width: 100%;
     }
 }
+@media screen and (max-width:350px) {
+  div#left-section span{
+    font-size: 13px;
+    padding: 8px 13px;
+  }
+}
 
 /* markets media query END */
+/* coins section start */
+#coins {
+    margin: 20px 0;
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+#informations {
+    position: relative;
+    width: 90%;
+    min-height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#informations::after {
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #b752a1 0%, #3a46cb 100%);
+
+}
+
+
+#informations tr {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#informations tr th:first-of-type {
+    margin: 0 50px 0 0;
+}
+
+
+#informations tr:first-of-type th {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#informations tr:first-of-type th span {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#informations tr:first-of-type th span>* {
+    margin: 0 5px;
+}
+
+#informations tr:first-of-type th span .icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 6px;
+    color: #9498a8;
+}
+
+/* # color */
+#informations tr:first-of-type th:first-of-type span:first-of-type {
+    color: #5A5C74;
+    font-size: 12px;
+}
+
+/* each coin styles start */
+.coin {
+    cursor: pointer;
+    position: relative;
+    width: 95%;
+    font-size: 16px;
+    margin: 0 15px 0 0;
+
+}
+
+table.coin:hover {
+    background-color: #80808019;
+}
+
+table.coin::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    height: 0.5px;
+    width: 95%;
+    background-color: #5A5C74;
+
+
+}
+
+table.coin tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    padding: 20px 0;
+}
+
+
+table.coin tr td:nth-of-type(2) {
+    margin: 0 30px 0 0
+}
+
+table.coin tr td:nth-of-type(3) {
+    color: cyan;
+    margin: 0 10px 0 0
+}
+
+.coin td,
+.coin th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.coin td .coin-name,
+.coin-price div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin td .coin-name>*,
+.coin td .coin-price>* {
+    margin: 4px 0;
+}
+
+.coin-price div span:nth-child(2) {
+    color: #5A5C74;
+    font-size: 13px;
+
+}
+
+table.coin tr .coin-price div span:nth-of-type(2) {
+    display: flex;
+}
+
+table.coin tr .coin-price div span:nth-of-type(3) {
+    display: none;
+}
+
+.coin td .bxs-coin {
+    color: #5A5C74;
+    margin: 0 20px 0 0;
+}
+
+.trade-btn {
+    padding: 8px 10px;
+    background-color: #4f526a94;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #787dc1 !important;
+
+}
+
+.details span:first-of-type {
+    display: none !important;
+    color: #5A5C74;
+
+}
+
+.details div span:first-of-type {
+    display: block !important;
+    color: white
+}
+
+.coin-label {
+    display: none !important;
+    font-size: 18px !important;
+}
+
+/* each coin styles END */
+/* coins section END */
+/* media queries for coins start */
+@media screen and (max-width:1050px) {
+    .coin {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    #informations tr th {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #informations {
+        display: none;
+    }
+
+    table.coin tr {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+    }
+
+    table.coin tr .coin-name {
+        display: none;
+    }
+
+
+    table.coin tr .coin-price div {
+        flex-direction: row;
+        font-size: 13px;
+    }
+
+    .bxs-coin {
+        display: none !important;
+    }
+
+    table.coin tr .coin-price div span:nth-of-type(2) {
+        display: none;
+    }
+
+    table.coin tr .coin-price div span:nth-of-type(3) {
+        display: flex;
+    }
+
+    .coin-price div span:nth-child(3) {
+        color: #5A5C74
+    }
+
+    .coin td,
+    .coin th,
+    table.coin tr .coin-price {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 5px !important;
+        font-size: 13px;
+    }
+
+
+    .trade-btn {
+        width: 95%;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center !important;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between !important;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .details.coin-price {
+        width: 80.5vw !important;
+    }
+
+    .details div span:first-of-type {
+        color: white;
+    }
+
+    .details span:first-of-type {
+        display: block !important;
+
+    }
+
+    .coin-label {
+        display: flex !important;
+
+    }
+
+    .coin-label .bxs-coin {
+        display: block !important;
+        color: #5A5C74;
+    }
+
+}
+
+/* media queries for coins END */
 /* markets END */

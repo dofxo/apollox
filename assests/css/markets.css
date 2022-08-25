@@ -32,6 +32,7 @@ body {
 
     display: flex;
     width: 100%;
+    font-size: 15px;
 }
 
 #left-section .border-gradient {
@@ -85,15 +86,48 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #ffffff7c;
+    font-size: 15px;
 }
 
-#right-section i {
-    color: white;
-}
-
+#right-section i,
 #right-section input::placeholder {
-    color: white;
+    color: #ffffff7c;
 }
+
+/* markets media query start */
+@media screen and (max-width:850px) {
+    #markets {
+
+        width: 95%;
+
+    }
+
+    #markets-top {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+
+    }
+
+    #markets-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    #right-section {
+        margin: 20px 0;
+        justify-content: flex-start;
+    }
+
+    #right-section input {
+        padding: 10px 0;
+        width: 100%;
+    }
+}
+
+/* markets media query END */
 
 /* markets END */

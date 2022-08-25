@@ -409,6 +409,18 @@ header .header-logo img {
     }
 
 }
+@media screen and (max-width:370px) {
+
+
+    .header-right-download {
+        display: none;
+    }
+    .header-register div:last-of-type {
+        display: none;
+    }
+
+}
+
 
 
 /* media query for header END */

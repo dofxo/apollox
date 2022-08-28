@@ -266,6 +266,7 @@ header .header-logo img {
     background-color: #1e1f31;
     transition: all linear 0.2s;
     overflow-y: scroll;
+    z-index: 10;
 }
 
 #hamburger-menu .container {
@@ -277,7 +278,7 @@ header .header-logo img {
 }
 
 .hamburger-menu-popup {
-    width: 65vw !important;
+    width: 90vw !important;
 
 }
 

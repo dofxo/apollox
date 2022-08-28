@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    /* value changed from header-footer.css */
+    background-color: rgba(0, 0, 0, 0.3)
+ !important;
+
+}
+
+/*  header register section START */
+#rowOne {
+    background-color: red;
+}
+
+/* advertisement START*/
+
+.advertisement {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    /* not to overwrite header */
+    z-index: -1;
+
+}
+
+.advertise-items {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    width: max-content;
+    border-radius: 24px;
+    padding: 5px 20px;
+    color: white;
+    background: linear-gradient(90.39deg, rgba(102, 82, 227) 1.61%, rgba(217, 56, 231) 100%);
+    cursor: pointer;
+}
+
+.advertise-items i {
+    font-size: 30px;
+    margin-left: -15px;
+}
+
+.advertise-btn {
+    background-color: gold;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+
+}
+
+/* advertisement END */
+/*  header register section END */
+/* row one register  START*/
+.rowOne-register {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    text-align: center;
+}
+
+.rowOne-register p:first-of-type {
+    color: white;
+    font-size: 60px;
+}
+
+.rowOne-register p:last-of-type {
+    font-size: 20px;
+    color: #b2b4c6;
+}
+
+span#doot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    color: red;
+}
+
+/* register btn start */
+
+.register-btn {
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 4px;
+    background-image: linear-gradient(93.96deg, rgb(224, 95, 187) 0.76%, rgb(66, 80, 244) 100.57%);
+    box-shadow: rgb(0 0 0 / 8%) 0px 7px 14px, rgb(0 0 0 / 8%) 0px 3px 6px, rgb(90 92 116 / 90%) 0px 0px 1px inset;
+}
+
+.register-btn:hover {
+    background-image: linear-gradient(94.64deg, rgb(224, 141, 228) -19.85%, rgb(77, 81, 227) 100%);
+}
+
+.register-btn:active {
+    background-image: none;
+    background-color: rgb(88, 76, 234);
+}
+
+/* register btn END */
+/* row one register  END*/

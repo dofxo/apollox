@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
+body {  
+    -ms-overflow-style: none; /* remove scroll bar for IE and Edge*/
+    scrollbar-width: none;  /*remove scroll bar for Firefox */
     overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none; /* remove scrollbar for Chrome, Safari and Opera */
 }
 
 a {
@@ -16,13 +22,12 @@ a {
 /* header general changes*/
 
 header {
-    background-color: #171822ba;
+    background-color: transparent;
     padding: 15px 0;
     min-width: fit-content;
     display: flex;
     align-items: center;
     justify-self: center;
-
     z-index: 9;
 
 }

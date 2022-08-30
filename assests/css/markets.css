@@ -152,7 +152,7 @@ body {
 
 #informations {
     position: relative;
-    width: 92%;
+    width: 90%;
     min-height: 60px;
     color: white;
 }
@@ -175,14 +175,21 @@ body {
 
 }
 
-
-#informations tr th:first-of-type {
-    margin: 0 50px 0 0;
+#informations tr>th:nth-of-type(2) {
+    margin: 0 30px 0 50px;
 }
 
 #informations tr>th:nth-of-type(2)>* {
-    margin: 0 30px 0 40px !important;
+    margin:0 25px;
+}
 
+
+#informations tr>th>* {
+    margin: 0 15px;
+}
+
+#informations tr>th i {
+    margin: 0 0 0 5px;
 }
 
 
@@ -194,16 +201,13 @@ body {
 }
 
 #informations tr:first-of-type th span {
-    margin: 0 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
 
 }
 
-#informations tr:first-of-type th span>* {
-    margin: 0 5px;
-}
+
 
 #informations tr:first-of-type th span .icons {
     display: flex;
@@ -260,7 +264,7 @@ table.coin tr td:nth-of-type(2) {
 
 table.coin tr td:nth-of-type(3) {
     color: cyan;
-    margin: 0 10px 0 0
+    margin: 0 10px 0 -30px
 }
 
 .coin td,

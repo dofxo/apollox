@@ -22,7 +22,7 @@ a {
 /* header general changes*/
 
 header {
-    background-color: #171822ba;
+    background-color: transparent;
     padding: 15px 0;
     min-width: fit-content;
     display: flex;

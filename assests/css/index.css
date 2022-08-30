@@ -1,4 +1,5 @@
 header {
+
     /* value changed from header-footer.css */
     background-color: rgba(0, 0, 0, 0.3)
  !important;
@@ -40,6 +41,7 @@ header {
 /* gift box END */
 /*  header register section START */
 #rowOne {
+    padding-bottom: 30px;
     background-color: rgb(235, 113, 113);
 }
 
@@ -53,6 +55,8 @@ header {
     justify-content: space-between;
     /* not to overwrite header */
     z-index: 2;
+
+    overflow: hidden;
 
 }
 
@@ -87,7 +91,22 @@ header {
     color: black;
 
 }
+.advertise-one{
 
+}
+.advertise-two{
+    /* animation:advertiseOne 2s linear 1; */
+    transform: translateY(45px);
+}
+@keyframes advertiseOne{
+    0%{
+        transform: translateY(45px);
+    }
+    25%{
+        transform: translateY(-45px);
+    }
+    100%{ transform: translateY(-155%);}
+}
 /* advertisement END */
 /*  header register section END */
 /* row one register  START*/
@@ -161,6 +180,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.digital-currency-box>div div:last-of-type{
+    margin-left: 5px;
+    color: rgba(29,177,168);
+}
 .digital-currency-box>div>div{
     display: inline-block;
 }
@@ -185,9 +208,11 @@ header {
 }
 
 .register-process-content-box{
-    cursor: pointer;
     position: relative; /* for Diagonal box*/
     padding: 30px;
+}
+.register-process-content-box:not(div:first-of-type){
+    cursor: pointer;
 }
 .register-process-content-box i{
     font-size: 25px;

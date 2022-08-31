@@ -18,12 +18,11 @@ section:not(#rowOne, #apx-community) {
     position: relative;
     color: white;
     text-align: center;
-
     position: fixed;
     bottom: 25px;
     right: 25px;
-
     cursor: pointer;
+    z-index: 2;
 }
 
 .gift-box img {
@@ -48,7 +47,7 @@ section:not(#rowOne, #apx-community) {
 /* gift box END */
 /*  header register section START */
 #rowOne {
-    padding-bottom: 30px;
+    padding: 70px 0 30px 0;
     background: rgb(13, 20, 84);
     background: linear-gradient(145deg, rgba(13, 20, 84, 1) 0%, rgba(37, 49, 187, 1) 37%, rgba(101, 40, 147, 1) 58%, rgba(150, 33, 117, 1) 100%);
 }
@@ -56,17 +55,17 @@ section:not(#rowOne, #apx-community) {
 /* advertisement START*/
 
 .advertisement {
-    padding-top: 70px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     /* not to overwrite header */
     z-index: 2;
-
     overflow: hidden;
+    height: 50px;
 
 }
+
 
 .advertise-items {
     display: flex;
@@ -74,14 +73,14 @@ section:not(#rowOne, #apx-community) {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-
     border: 1px solid rgba(255, 255, 255, 0.185);
     width: max-content;
     border-radius: 24px;
     padding: 5px 20px;
     color: white;
-    background: linear-gradient(90.39deg, rgba(102, 82, 227) 1.61%, rgba(217, 56, 231) 100%);
+    background: linear-gradient(90.39deg, rgba(102, 82, 227) 1.61%, rgba(216, 56, 231, 0.456) 100%);
     cursor: pointer;
+    margin: 0 0 15px 0;
 }
 
 .advertise-items i {
@@ -93,31 +92,74 @@ section:not(#rowOne, #apx-community) {
     background-color: gold;
     border-radius: 20px;
     padding: 5px 10px;
-
     font-size: 14px;
     font-weight: 300;
     color: black;
 
 }
 
-.advertise-one {}
 
-.advertise-two {
-    /* animation:advertiseOne 2s linear 1; */
-    transform: translateY(45px);
+.advertisement>* {
+    animation: advertise 20s ease-in-out infinite 1s;
 }
 
-@keyframes advertiseOne {
+@keyframes advertise {
     0% {
-        transform: translateY(45px);
+        transform: translateY(0);
     }
 
+
+    10% {
+        transform: translateY(-50px);
+    }
+
+    15% {
+        transform: translateY(-50px);
+    }
+
+
     25% {
-        transform: translateY(-45px);
+        transform: translateY(-110px);
+    }
+
+    30% {
+        transform: translateY(-110px);
+    }
+
+    40% {
+        transform: translateY(-165px);
+    }
+
+    45% {
+        transform: translateY(-165px);
+    }
+
+    55% {
+        transform: translateY(-220px);
+    }
+
+    60% {
+        transform: translateY(-220px);
+    }
+
+    70% {
+        transform: translateY(-280px);
+    }
+
+    75% {
+        transform: translateY(-280px);
+    }
+
+    85% {
+        transform: translateY(-340px);
+    }
+
+    90% {
+        transform: translateY(-340px);
     }
 
     100% {
-        transform: translateY(-155%);
+        transform: translateY(-340px);
     }
 }
 
@@ -130,7 +172,6 @@ section:not(#rowOne, #apx-community) {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-
     text-align: center;
 }
 
@@ -181,12 +222,17 @@ section:not(#rowOne, #apx-community) {
 /* row one register  END*/
 /* Digital currency START */
 #rowOne-digital-currency {
-    padding-top: 120px;
+    margin: 120px 0 0 0;
     display: flex;
     gap: 10px;
     flex-direction: column;
+    overflow: hidden;
+    height: 35px;
 
 }
+
+
+
 
 .digital-currency-box {
     color: white;
@@ -194,7 +240,55 @@ section:not(#rowOne, #apx-community) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: coinChange 15s ease-in-out infinite;
 }
+
+@keyframes coinChange {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-40px);
+    }
+
+    20% {
+        transform: translateY(-40px);
+    }
+
+    30% {
+        transform: translateY(-80px);
+    }
+
+    40% {
+        transform: translateY(-80px);
+    }
+
+    50% {
+        transform: translateY(-120px);
+    }
+
+    60% {
+        transform: translateY(-120px);
+    }
+
+    70% {
+        transform: translateY(-160px);
+    }
+
+    80% {
+        transform: translateY(-160px);
+    }
+
+    90% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
 
 .digital-currency-box>div div:last-of-type {
     margin-left: 5px;
@@ -259,6 +353,7 @@ section:not(#rowOne, #apx-community) {
     width: 1px;
     height: 200px;
     border: 1px solid rgb(255, 255, 255);
+
 }
 
 /* rowOne register proccess END */
@@ -598,10 +693,12 @@ section:not(#rowOne, #apx-community) {
     cursor: pointer;
     background: grey;
 }
-.socials:hover i{
+
+.socials:hover i {
     transform: rotateX(180deg);
 
 }
+
 .socials img,
 .socials i {
     transition: 0.3s;
@@ -628,10 +725,12 @@ section:not(#rowOne, #apx-community) {
     opacity: 0;
     transition: 0.1s 0.2s;
 }
+
 .socials:hover .social-media-relative-box {
     visibility: visible;
     opacity: 1;
 }
+
 .social-media-relative-box p {
     font-size: 14px;
     padding: 10px 5px 20px 10px;
@@ -646,17 +745,20 @@ section:not(#rowOne, #apx-community) {
 .social-media-relative-box p:hover {
     background-color: rgb(45, 46, 63);
 }
+
 /* telegrams relative box START*/
 .telegram .social-media-relative-box {
     max-height: 250px;
-    
+
     overflow-y: scroll;
 }
+
 /* telegrams relative box END*/
 /* socials scroll bar START */
-.telegram .social-media-relative-box::-webkit-scrollbar-thumb{
+.telegram .social-media-relative-box::-webkit-scrollbar-thumb {
     border: 3px solid orange;
 }
+
 /* socials scroll bar END */
 /* socials relative box END */
 /* social media END */

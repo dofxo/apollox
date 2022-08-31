@@ -503,6 +503,7 @@ section:not(#rowOne, #apx-community) {
 
 .things-about-apx-token-items h2 {
     padding-top: 23px;
+    padding-bottom: 20px;
     font-size: 20px;
 }
 
@@ -775,3 +776,161 @@ section:not(#rowOne, #apx-community) {
 
 /* socials icons END*/
 /* ApolloX Community END*/
+
+/* Responsive */
+@media screen and (max-width:1024px) {
+
+    /* rowOne */
+    .container {
+        width: 800px;
+    }
+
+    /* advertise */
+    .advertise-items p {
+        font-size: 12px;
+    }
+
+    /* register box */
+    .register-process-box {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 13px;
+    }
+
+    .register-process-content-box {
+        vertical-align: middle;
+        padding: 10px;
+        flex-direction: row;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+
+    .register-process-content-box i {
+        float: right;
+    }
+
+    .absolute-line {
+        display: none;
+    }
+
+    /* apxtoken */
+    #apx-token-things-to-know img {
+        width: 400px;
+    }
+
+    #apx-token-things-to-know p {
+        font-size: 18px;
+    }
+
+    .things-about-apx-token-box {
+        justify-content: space-around;
+    }
+
+    /* advantages */
+    .advantages-description {
+        max-width: 310px;
+    }
+
+    .advantages-box {
+        flex-direction: column;
+    }
+
+    .advantages-box>div:last-of-type img {
+        width: 300px;
+    }
+
+    .advantages-items {
+        justify-content: space-between;
+    }
+
+    /* download-app */
+    .download-the-app-box .dowload-the-app-items:first-of-type img {
+        width: 400px;
+    }
+
+    .dowload-the-app-title p {
+        font-size: 30px;
+    }
+
+    .dowload-the-app-description p {
+        font-size: 15px;
+    }
+
+    .download-app a img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 730px;
+    }
+
+    /* things-about-apx-token-items */
+    .things-about-apx-token-box {
+        flex-direction: column;
+    }
+
+    .things-about-apx-token-items {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .things-about-apx-token-box>div {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .things-about-apx-token-box>div:nth-child(1) {
+        background-color: rgba(0, 255, 255, 0.295);
+    }
+
+    .things-about-apx-token-box>div:nth-child(2) {
+        background-color: purple;
+    }
+
+    .things-about-apx-token-box>div:nth-child(3) {
+        background-color: rgb(69, 69, 248);
+    }
+
+    .things-about-apx-description {
+        display: inline-block;
+    }
+
+    .things-about-apx-token-items img:last-of-type {
+        display: none;
+    }
+
+    .things-about-apx-token-items img:first-of-type {
+        width: 150px;
+    }
+
+    /* download-the-app */
+    .download-the-app-box .dowload-the-app-items:first-of-type img {
+        width: 350px;
+    }
+
+    .download-app a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* apx-community */
+    .apx-community-title p:first-of-type {
+        font-size: 30px;
+    }
+
+    .apx-community-title p:last-of-type {
+        font-size: 18px;
+    }
+    /* gift-box  */
+    .gift-box{
+        visibility: hidden;
+    }
+
+}
+@media screen and (max-width:425px){
+    .container {
+        width: 370px;
+    }
+}

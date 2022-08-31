@@ -1,16 +1,20 @@
 header {
-
     /* value changed from header-footer.css */
-    background-color: rgba(0, 0, 0, 0.3)
- !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
 
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 0 auto;
 }
+
+section:not(#rowOne, #apx-community) {
+    background-color: #171822;
+}
+
 /* gift box START */
-.gift-box{
+.gift-box {
     position: relative;
     color: white;
     text-align: center;
@@ -21,18 +25,21 @@ header {
 
     cursor: pointer;
 }
-.gift-box img{
+
+.gift-box img {
     overflow: hidden;
-    transition:.1s linear all;
+    transition: .1s linear all;
 }
-.gift-box:hover img{
+
+.gift-box:hover img {
     transform: translateY(-10px);
 }
-#gift-box-description{
+
+#gift-box-description {
     position: absolute;
-    background: linear-gradient(180deg,#F4BD2D 0%,#E67F23 100%);
+    background: linear-gradient(180deg, #F4BD2D 0%, #E67F23 100%);
     border-radius: 7px;
-    padding: 6px; 
+    padding: 6px;
     right: 0;
     left: 0;
     bottom: -20px;
@@ -42,7 +49,8 @@ header {
 /*  header register section START */
 #rowOne {
     padding-bottom: 30px;
-    background-color: rgb(235, 113, 113);
+    background: rgb(13, 20, 84);
+    background: linear-gradient(145deg, rgba(13, 20, 84, 1) 0%, rgba(37, 49, 187, 1) 37%, rgba(101, 40, 147, 1) 58%, rgba(150, 33, 117, 1) 100%);
 }
 
 /* advertisement START*/
@@ -91,22 +99,28 @@ header {
     color: black;
 
 }
-.advertise-one{
 
-}
-.advertise-two{
+.advertise-one {}
+
+.advertise-two {
     /* animation:advertiseOne 2s linear 1; */
     transform: translateY(45px);
 }
-@keyframes advertiseOne{
-    0%{
+
+@keyframes advertiseOne {
+    0% {
         transform: translateY(45px);
     }
-    25%{
+
+    25% {
         transform: translateY(-45px);
     }
-    100%{ transform: translateY(-155%);}
+
+    100% {
+        transform: translateY(-155%);
+    }
 }
+
 /* advertisement END */
 /*  header register section END */
 /* row one register  START*/
@@ -166,35 +180,40 @@ header {
 /* register btn END */
 /* row one register  END*/
 /* Digital currency START */
-#rowOne-digital-currency{
+#rowOne-digital-currency {
     padding-top: 120px;
     display: flex;
     gap: 10px;
     flex-direction: column;
 
 }
-.digital-currency-box{
+
+.digital-currency-box {
     color: white;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.digital-currency-box>div div:last-of-type{
+
+.digital-currency-box>div div:last-of-type {
     margin-left: 5px;
-    color: rgba(29,177,168);
+    color: rgba(29, 177, 168);
 }
-.digital-currency-box>div>div{
+
+.digital-currency-box>div>div {
     display: inline-block;
 }
-.digital-currency-box img{
+
+.digital-currency-box img {
     margin-right: 8px;
     vertical-align: middle;
     width: 30px;
 }
+
 /* Digital currency END */
 /* rowOne register proccess START */
-.register-process-box{
+.register-process-box {
     overflow: hidden;
     border: 1px solid white;
     margin-top: 50px;
@@ -204,36 +223,447 @@ header {
     align-items: center;
     color: white;
     font-weight: 300;
-    
+
 }
 
-.register-process-content-box{
-    position: relative; /* for Diagonal box*/
+.register-process-content-box {
+    position: relative;
+    /* for Diagonal box*/
     padding: 30px;
 }
-.register-process-content-box:not(div:first-of-type){
+
+.register-process-content-box:not(div:first-of-type) {
     cursor: pointer;
 }
-.register-process-content-box i{
+
+.register-process-content-box i {
     font-size: 25px;
     vertical-align: middle;
 }
-.register-process-content-box span:first-of-type{
+
+.register-process-content-box span:first-of-type {
     padding-right: 5px;
 }
-.register-process-content-box:last-of-type span{
+
+.register-process-content-box:last-of-type span {
     padding-right: 10px;
 }
+
 /* Diagonal box */
 
-.absolute-line{
+.absolute-line {
     transform: rotate(12deg);
     position: absolute;
     top: -50px;
-    right:-50px;
+    right: -50px;
     width: 1px;
-    height:200px;
+    height: 200px;
     border: 1px solid rgb(255, 255, 255);
 }
 
 /* rowOne register proccess END */
+/* introducing Apx START */
+#introducingApx {
+    background-image: url(../images/indexImages/apx-desktop-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 600px;
+    height: 700px;
+
+    text-align: center;
+    position: relative;
+}
+
+#introducingApx .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* introducing apx text START */
+#introducingApx h1 {
+    font-size: 48px;
+    padding-top: 100px;
+    color: white;
+}
+
+#introducingApx p:first-of-type {
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: rgb(178, 180, 198);
+    font-weight: 300;
+}
+
+#introducingApx a span:first-of-type {
+    color: rgba(126, 154, 255);
+}
+
+#introducingApx a span:last-of-type {
+    padding-left: 10px;
+    color: rgb(178, 180, 198);
+}
+
+#introducingApx a i {
+    vertical-align: middle;
+}
+
+/* introducing apx text END */
+/* introducing apx buy START */
+#apx-coin {
+    padding-top: 70px;
+    width: 124px;
+
+}
+
+#apx-price {
+    color: white;
+    line-height: 20px;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+#buy-apx-token {
+    color: white;
+    background: linear-gradient(93.96deg, #E05FBB 0.76%, #4250F4 100.57%);
+    border: 1px solidrgba(255, 255, 255, 0.23);
+    border-right: 1px solid #747bdf;
+    border-radius: 5px;
+    padding: 15px 70px;
+
+
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+#apx-token-bg {
+    background: linear-gradient(93.96deg, rgba(224, 95, 187, 0.8) 0.76%, rgba(66, 80, 244, 0.8) 100.57%);
+    filter: blur(30px);
+    border-radius: 8px;
+    min-height: 50px;
+    min-width: 210px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+/* introducing apx buy END */
+/* introducing Apx END */
+/* things to know about APX token START */
+#things-about-apx-token {
+    padding-top: 100px;
+}
+
+/* apx-token-things-to-know START */
+#apx-token-things-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#apx-token-things-to-know img {
+    width: 600px;
+}
+
+#apx-token-things-to-know p {
+    margin-top: -35px;
+    color: white;
+    font-size: 28px;
+}
+
+/* apx-token-things-to-know END */
+/* things about apx token box START */
+.things-about-apx-token-box {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 70px;
+
+}
+
+.things-about-apx-token-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.things-about-apx-token-items .thing-about-apx-icon-bg {
+    position: absolute;
+    top: 80px;
+    width: 300px;
+}
+
+.things-about-apx-token-items img:first-of-type {
+    z-index: 1;
+    width: 110px;
+}
+
+.things-about-apx-token-items h2 {
+    padding-top: 23px;
+    font-size: 20px;
+}
+
+/*things-about-apx-description START*/
+.things-about-apx-description {
+    padding-top: 20px;
+}
+
+.things-about-apx-description p {
+    padding-bottom: 5px;
+    font-weight: 300;
+    color: #b2b4c6;
+}
+
+/*things-about-apx-description END*/
+/* things about apx token box END */
+/* things to know about APX token END */
+/* Advantages START */
+#advantages {
+    padding-top: 100px;
+    color: white;
+}
+
+#advantages p:not(#advantages-title p:first-of-type) {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* advantages title START */
+#advantages-title p:first-of-type {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 15px;
+
+}
+
+#advantages-title p:last-of-type {
+    color: #b2b4c6;
+}
+
+/* advantages title END */
+/* advantages-rowOne START */
+.advantages-box {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+
+}
+
+.advantages-box div:last-of-type .advantages-description {
+    max-width: max-content;
+}
+
+.advantages-items {
+    background-image: url(../images/indexImages/ad-info3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(30, 31, 49);
+
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
+/* advantages-rowOne-description START */
+.advantages-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 310px;
+    padding: 40px;
+}
+
+.advantages-description h3 {
+    color: #b2b4c66e;
+    line-height: 25px;
+}
+
+/* advantages-rowOne-description END */
+/* advantages-rowOne END */
+/* Advantages END */
+/* Download the app START */
+#Download-the-app {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#Download-the-app .container>div:last-of-type .dowload-the-app-description {
+    max-width: 520px;
+}
+
+.download-the-app-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dowload-the-app-items img {
+    width: 600px;
+}
+
+.dowload-the-app-title p {
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.dowload-the-app-description {
+    padding-top: 10px;
+}
+
+.dowload-the-app-description p {
+    font-weight: 300;
+    color: #b2b4c669;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.download-app {
+    padding-top: 50px;
+}
+
+.download-app a {
+    margin-right: 13px;
+    padding: 16px 25px;
+    background-color: rgb(59, 61, 89);
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.download-app a:hover {
+    background-color: rgb(45, 46, 63);
+}
+
+.download-app a img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 25px;
+}
+
+/* Download the app END */
+/* ApolloX Community START*/
+#apx-community {
+    text-align: center;
+    background: url(../images/indexImages/community-bg-x.svg) no-repeat center, #1E1F31;
+    min-height: 400px;
+}
+
+.apx-community-title {
+    padding-top: 100px;
+}
+
+.apx-community-title p:first-of-type {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.apx-community-title p:last-of-type {
+    font-weight: 300;
+    font-size: 20px;
+    color: #b2b4c69a;
+}
+
+/* social media START */
+.social-media {
+    padding-top: 50px;
+}
+
+.socials {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    background-color: rgb(59, 61, 89);
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin-right: 15px;
+
+    position: relative;
+}
+
+.socials:hover {
+    cursor: pointer;
+    background: grey;
+}
+.socials:hover i{
+    transform: rotateX(180deg);
+
+}
+.socials img,
+.socials i {
+    transition: 0.3s;
+    vertical-align: middle;
+}
+
+.socials i {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+/* socials relative box START */
+
+.social-media-relative-box {
+    min-width: 180px;
+    text-align: left;
+    top: 120%;
+    position: absolute;
+    background-color: rgb(35, 37, 49);
+    border-radius: 5px;
+    padding: 10px 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s 0.2s;
+}
+.socials:hover .social-media-relative-box {
+    visibility: visible;
+    opacity: 1;
+}
+.social-media-relative-box p {
+    font-size: 14px;
+    padding: 10px 5px 20px 10px;
+    margin-right: 5px;
+    font-weight: 300;
+}
+
+.social-media-relative-box p:first-of-type {
+    color: rgb(126, 154, 255);
+}
+
+.social-media-relative-box p:hover {
+    background-color: rgb(45, 46, 63);
+}
+/* telegrams relative box */
+.telegram .social-media-relative-box {
+    max-height: 250px;
+
+    overflow-y: scroll;
+}
+/* socials relative box END */
+/* social media END */
+/* socials icons START*/
+.apx-community-socials {
+    padding-top: 50px;
+}
+
+.apx-community-socials a i {
+    margin-right: 15px;
+    font-size: 35px;
+    color: #b2b4c6;
+}
+
+/* socials icons END*/
+/* ApolloX Community END*/

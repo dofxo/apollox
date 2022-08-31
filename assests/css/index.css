@@ -1,6 +1,6 @@
 header {
     /* value changed from header-footer.css */
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background: rgb(13, 20, 84) !important;
 
 }
 
@@ -646,12 +646,18 @@ section:not(#rowOne, #apx-community) {
 .social-media-relative-box p:hover {
     background-color: rgb(45, 46, 63);
 }
-/* telegrams relative box */
+/* telegrams relative box START*/
 .telegram .social-media-relative-box {
     max-height: 250px;
-
+    
     overflow-y: scroll;
 }
+/* telegrams relative box END*/
+/* socials scroll bar START */
+.telegram .social-media-relative-box::-webkit-scrollbar-thumb{
+    border: 3px solid orange;
+}
+/* socials scroll bar END */
 /* socials relative box END */
 /* social media END */
 /* socials icons START*/

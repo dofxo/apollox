@@ -230,6 +230,7 @@ section:not(#rowOne, #apx-community) {
     height: 35px;
 
 }
+
 .digital-currency-box {
     color: white;
     font-size: 20px;
@@ -303,7 +304,7 @@ section:not(#rowOne, #apx-community) {
 
 /* Digital currency END */
 /* rowOne-horizontal-digital-currency-box START */
-.rowOne-horizontal-digital-currency-box{
+.rowOne-horizontal-digital-currency-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,57 +314,72 @@ section:not(#rowOne, #apx-community) {
     height: 30px;
     display: none;
 }
-.rowOne-horizontal-digital-currency-box > div *{
+
+.rowOne-horizontal-digital-currency-box>div * {
     vertical-align: middle;
 }
-.rowOne-horizontal-digital-currency-box > div img{
+
+.rowOne-horizontal-digital-currency-box>div img {
     max-width: 25px;
 }
-.rowOne-horizontal-digital-currency-box > div{
+
+.rowOne-horizontal-digital-currency-box>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
 
-    animation:horizontalCurrency 20s infinite linear ;
+    animation: horizontalCurrency 20s infinite linear;
 
 }
+
 @keyframes horizontalCurrency {
- 0%{
-    transform: translateY(0);
- }
- 10%{
-    transform: translateY(-35px);
- }
- 20%{
-    transform: translateY(-35px);
- }
- 30%{
-    transform: translateY(-70px);
- }
- 40%{
-    transform: translateY(-70px);
- }
- 50%{
-    transform: translateY(-105px);
- }
- 60%{
-    transform: translateY(-105px);
- }
- 70%{
-    transform: translateY(-140px);
- }
- 80%{
-    transform: translateY(-140px);
- }
- 90%{
-    transform: translateY(-175px);
- }
- 100%{
-    transform: translateY(-175px);
- }
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-35px);
+    }
+
+    20% {
+        transform: translateY(-35px);
+    }
+
+    30% {
+        transform: translateY(-70px);
+    }
+
+    40% {
+        transform: translateY(-70px);
+    }
+
+    50% {
+        transform: translateY(-105px);
+    }
+
+    60% {
+        transform: translateY(-105px);
+    }
+
+    70% {
+        transform: translateY(-140px);
+    }
+
+    80% {
+        transform: translateY(-140px);
+    }
+
+    90% {
+        transform: translateY(-175px);
+    }
+
+    100% {
+        transform: translateY(-175px);
+    }
 }
+
 /* rowOne-horizontal-digital-currency-box END */
 /* rowOne register proccess START */
 .register-process-box {
@@ -814,12 +830,7 @@ section:not(#rowOne, #apx-community) {
 }
 
 /* telegrams relative box END*/
-/* socials scroll bar START */
-.telegram .social-media-relative-box::-webkit-scrollbar-thumb {
-    border: 3px solid orange;
-}
 
-/* socials scroll bar END */
 /* socials relative box END */
 /* social media END */
 /* socials icons START*/
@@ -901,12 +912,14 @@ section:not(#rowOne, #apx-community) {
     .advantages-items {
         justify-content: space-between;
     }
+
     /*things-about-apx-token */
-    .things-about-apx-token-box{
+    .things-about-apx-token-box {
         display: flex;
         justify-content: space-evenly;
         gap: 100px;
     }
+
     /* download-app */
     .download-the-app-box .dowload-the-app-items:first-of-type img {
         width: 400px;
@@ -987,114 +1000,235 @@ section:not(#rowOne, #apx-community) {
     .apx-community-title p:last-of-type {
         font-size: 18px;
     }
+
     /* gift-box  */
-    .gift-box{
+    .gift-box {
         visibility: hidden;
     }
 
 }
-@media screen and (max-width:425px){
+
+@media screen and (max-width:425px) {
     .container {
         width: 390px;
     }
+
     /* advertisement */
     .advertise-items p,
-    .advertise-items div{
+    .advertise-items div {
         font-size: 12px;
     }
-    .advertise-items{
-        padding:5px 15px ;
+
+    .advertise-items {
+        padding: 5px 15px;
         width: 310px;
     }
-    .advertise-items i{
+
+    .advertise-items i {
         font-size: 15px;
     }
-    .advertise-btn{
+
+    .advertise-btn {
         padding: 3px 8px;
     }
+
     /* rowOne-register */
-    .rowOne-register p:first-of-type{
+    .rowOne-register p:first-of-type {
         font-size: 35px;
         line-height: 40px;
     }
+
     /* digital currency box */
-    .digital-currency-box{
+    .digital-currency-box {
         display: none;
     }
-    .rowOne-horizontal-digital-currency-box{
+
+    .rowOne-horizontal-digital-currency-box {
         display: flex;
     }
-    .register-process-box{
+
+    .register-process-box {
         display: flex;
         justify-content: space-around;
         align-items: center;
         max-width: 300px;
     }
+
     /* register proccess */
-    .register-process-box{
-    margin-left: 45px;
+    .register-process-box {
+        margin-left: 45px;
     }
+
     /* introducing apx */
-    #introducingApx h1{
+    #introducingApx h1 {
         font-size: 40px;
     }
-    #introducingApx p:first-of-type{
+
+    #introducingApx p:first-of-type {
         font-size: 18px;
     }
-    #introducingApx a:first-of-type{
+
+    #introducingApx a:first-of-type {
         font-size: 12px;
     }
-    #apx-coin{
+
+    #apx-coin {
         width: 90px;
     }
+
     /* advantages */
-    #advantages-title p:first-of-type{
+    #advantages-title p:first-of-type {
         font-size: 30px;
     }
-    #advantages p:not(#advantages-title p:first-of-type){
+
+    #advantages p:not(#advantages-title p:first-of-type) {
         font-size: 17px;
     }
-    .advantages-description h3{
+
+    .advantages-description h3 {
         font-size: 15px;
     }
-    .advantages-items{
+
+    .advantages-items {
         max-width: 400px;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
-    .advantages-items img{
-        width: 250px ;
+
+    .advantages-items img {
+        width: 250px;
     }
+
     /* download the app */
-    .dowload-the-app-title p{
+    .dowload-the-app-title p {
         font-size: 20px;
         line-height: 30px;
     }
+
     .download-the-app-box .dowload-the-app-items:first-of-type img {
         width: 230px;
     }
+
     .download-app a {
         font-size: 11px;
     }
-    .download-app{
+
+    .download-the-app-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .download-app {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-  
+
     /* apollox community */
-    .socials{
+    .socials {
         padding: 3px;
         width: 150px;
     }
-    .socials img{
+
+    .socials img {
         width: 35px;
     }
-    .socials span{
+
+    .socials span {
         font-size: 12px;
     }
-    .apx-community-socials a i{
+
+    .apx-community-socials a i {
         font-size: 30px;
+    }
+    .social-media-relative-box {
+        min-width: 150px;
+        top: 110%;
+        padding: 8px 0;
+    }
+    .social-media-relative-box p {
+        font-size: 12px;
+        padding: 10px 5px 20px 10px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 350px;
+    }
+
+    .rowOne-register p:first-of-type {
+        font-size: 25px;
+    }
+
+    .rowOne-register p:first-of-type::after {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+    }
+
+    .rowOne-register p:last-of-type {
+        font-size: 20px;
+    }
+
+    /* register process */
+    .register-process-box {
+        margin-left: 25px;
+    }
+
+    /* apx-token-things-to-know */
+    #apx-token-things-to-know img {
+        width: 300px;
+    }
+
+    #apx-token-things-to-know p {
+        font-size: 15px;
+    }
+
+    /* things-about-apx-description */
+    .things-about-apx-description p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .container {
+        width: 295px;
+    }
+
+    /* advertisement */
+    .advertise-items {
+        width: 290px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .register-process-box {
+        margin-left: 10px;
+    }
+
+    /* download the app */
+    .download-the-app-box .dowload-the-app-items:first-of-type img {
+        width: 180px;
+    }
+
+    /* apx-community */
+    .apx-community-title p:first-of-type {
+        font-size: 20px;
+    }
+
+    .apx-community-title p:last-of-type {
+        font-size: 15px;
+    }
+    .socials {
+        padding: 5px;
+        width: 130px;
+    }
+
+    .socials img {
+        width: 15px;
     }
 }

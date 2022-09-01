@@ -230,10 +230,6 @@ section:not(#rowOne, #apx-community) {
     height: 35px;
 
 }
-
-
-
-
 .digital-currency-box {
     color: white;
     font-size: 20px;
@@ -290,7 +286,7 @@ section:not(#rowOne, #apx-community) {
 }
 
 
-.digital-currency-box>div div:last-of-type {
+.Currency-loss {
     margin-left: 5px;
     color: rgba(29, 177, 168);
 }
@@ -306,6 +302,69 @@ section:not(#rowOne, #apx-community) {
 }
 
 /* Digital currency END */
+/* rowOne-horizontal-digital-currency-box START */
+.rowOne-horizontal-digital-currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    overflow-y: hidden;
+    height: 30px;
+    display: none;
+}
+.rowOne-horizontal-digital-currency-box > div *{
+    vertical-align: middle;
+}
+.rowOne-horizontal-digital-currency-box > div img{
+    max-width: 25px;
+}
+.rowOne-horizontal-digital-currency-box > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    animation:horizontalCurrency 20s infinite linear ;
+
+}
+@keyframes horizontalCurrency {
+ 0%{
+    transform: translateY(0);
+ }
+ 10%{
+    transform: translateY(-35px);
+ }
+ 20%{
+    transform: translateY(-35px);
+ }
+ 30%{
+    transform: translateY(-70px);
+ }
+ 40%{
+    transform: translateY(-70px);
+ }
+ 50%{
+    transform: translateY(-105px);
+ }
+ 60%{
+    transform: translateY(-105px);
+ }
+ 70%{
+    transform: translateY(-140px);
+ }
+ 80%{
+    transform: translateY(-140px);
+ }
+ 90%{
+    transform: translateY(-175px);
+ }
+ 100%{
+    transform: translateY(-175px);
+ }
+}
+/* rowOne-horizontal-digital-currency-box END */
 /* rowOne register proccess START */
 .register-process-box {
     overflow: hidden;
@@ -313,7 +372,7 @@ section:not(#rowOne, #apx-community) {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: white;
     font-weight: 300;
@@ -493,7 +552,7 @@ section:not(#rowOne, #apx-community) {
 .things-about-apx-token-items .thing-about-apx-icon-bg {
     position: absolute;
     top: 80px;
-    width: 300px;
+    width: 250px;
 }
 
 .things-about-apx-token-items img:first-of-type {
@@ -842,7 +901,12 @@ section:not(#rowOne, #apx-community) {
     .advantages-items {
         justify-content: space-between;
     }
-
+    /*things-about-apx-token */
+    .things-about-apx-token-box{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
     /* download-app */
     .download-the-app-box .dowload-the-app-items:first-of-type img {
         width: 400px;
@@ -931,6 +995,106 @@ section:not(#rowOne, #apx-community) {
 }
 @media screen and (max-width:425px){
     .container {
-        width: 370px;
+        width: 390px;
+    }
+    /* advertisement */
+    .advertise-items p,
+    .advertise-items div{
+        font-size: 12px;
+    }
+    .advertise-items{
+        padding:5px 15px ;
+        width: 310px;
+    }
+    .advertise-items i{
+        font-size: 15px;
+    }
+    .advertise-btn{
+        padding: 3px 8px;
+    }
+    /* rowOne-register */
+    .rowOne-register p:first-of-type{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    /* digital currency box */
+    .digital-currency-box{
+        display: none;
+    }
+    .rowOne-horizontal-digital-currency-box{
+        display: flex;
+    }
+    .register-process-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 300px;
+    }
+    /* register proccess */
+    .register-process-box{
+    margin-left: 45px;
+    }
+    /* introducing apx */
+    #introducingApx h1{
+        font-size: 40px;
+    }
+    #introducingApx p:first-of-type{
+        font-size: 18px;
+    }
+    #introducingApx a:first-of-type{
+        font-size: 12px;
+    }
+    #apx-coin{
+        width: 90px;
+    }
+    /* advantages */
+    #advantages-title p:first-of-type{
+        font-size: 30px;
+    }
+    #advantages p:not(#advantages-title p:first-of-type){
+        font-size: 17px;
+    }
+    .advantages-description h3{
+        font-size: 15px;
+    }
+    .advantages-items{
+        max-width: 400px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantages-items img{
+        width: 250px ;
+    }
+    /* download the app */
+    .dowload-the-app-title p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .download-the-app-box .dowload-the-app-items:first-of-type img {
+        width: 230px;
+    }
+    .download-app a {
+        font-size: 11px;
+    }
+    .download-app{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    /* apollox community */
+    .socials{
+        padding: 3px;
+        width: 150px;
+    }
+    .socials img{
+        width: 35px;
+    }
+    .socials span{
+        font-size: 12px;
+    }
+    .apx-community-socials a i{
+        font-size: 30px;
     }
 }

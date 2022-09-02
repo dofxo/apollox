@@ -20,9 +20,8 @@ body {
 	flex-basis: 0%;
 	Width: 1686px;
 	Height: 793px;
-    justify-content: center;
-    align-items: center;
     transition : all 0s ease 0s;
+
 }
 #box{
 	position: relative;
@@ -31,6 +30,8 @@ body {
     margin-top: 104px;
 	Width: 1654px;
 	Height: 601px;
+    justify-content: center;
+    align-items: center;
 
 }
 #container{
@@ -46,6 +47,8 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+
 }
 #instant-swap{
     font-size: 60px;

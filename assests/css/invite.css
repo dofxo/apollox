@@ -4,4 +4,179 @@ body {
     background: linear-gradient(190deg, #161623,
             #161624);
 
+            margin: 0px;
+            height: 100%;
+            width: 100vw;
+            overflow-x: hidden;
+            overflow-x: hidden ;
+            overflow-y: auto;
+            color: rgb(240, 240, 245);
+}
+     /*first row*/
+
+#main{
+    box-sizing:border-box;
+    min-width:0;
+    display:box;
+    display:flex;
+    display:-ms-flexbox;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 66px;
+    background: url(https://static.apollox.com/cloud-futures/static/images/futures/assets/onboarding/invite-friends/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position:0px top;
+
+}
+#container{
+    height : 519px;
+    width : 1200px;
+    border : 0px solid #F0F0F5;
+    padding : 180px 25px 70px 25px;
+    min-height : auto;
+    max-width : 1200px;
+    display: flex;
+    text-decoration : rgb(240, 240, 245);
+    background: url(https://static.apollox.com/cloud-futures/static/images/futures/assets/onboarding/invite-friends/banner.svg);
+    background-position: right -120px bottom;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing:border-box;
+    margin:0;
+    min-width:0;
+	
+}
+#text1st{
+     font-size: 40px;
+     font-weight: 700;
+     max-width: 677px;
+     line-height: 1.2;
+     margin: 0;
+     min-width: 0;
+     color: #fff;
+     box-sizing:border-box;
+
+}
+#text2nd{
+    max-width: 677px;
+    box-sizing:border-box;
+    margin:0;
+    min-width:0;
+    margin-top:20px;
+    font-size:20px;
+    color: rgb(240, 240, 245);
+    padding-right : 16;
+    padding-bottom : 32;
+    align-items: flex-start;
+    margin-top: 24px;
+    white-space: normal;
+}
+#button{
+    min-width: 60px;
+    margin: 0;
+    border-radius: 4px;
+    min-height: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    background-image: linear-gradient(93.96deg,#E05FBB 0.76%,#4250F4 100.57%);
+    background-color: #6B78EE;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 40px;
+    width: 180px;
+
+    color: #fff;
+}
+/*second row */
+#row2{
+    margin-top: 60px;
+}
+#container2nd{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+}
+#triplets{
+flex-direction: row;
+}
+#one{
+    width: 30%;
+}
+#step1{
+    border-style: none;
+}
+#step2{
+    margin-top: 26.67px;
+}
+#step3{
+    width: unset;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 0px;
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B2B4C6;
+    margin-top: 16px;
+    text-align: center;
+}
+#two{
+    width: 30%;
+}
+#point1{
+    border-style: none;
+
+}
+#point2{
+    margin-top: 26.67px;
+
+}
+#point3{
+    width: unset;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 0px;
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B2B4C6;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#three{
+    width: 30%;
+
+}
+#last1{
+    border-style: none;
+
+}
+#last2{
+    margin-top: 26.67px;
+
+}
+#last3{
+    width: unset;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 0px;
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B2B4C6;
+    margin-top: 16px;
+    text-align: center;
 }

@@ -1482,7 +1482,12 @@ body {
     font-weight: 500;
 }
 
-
+@media screen and (min-width:767px) {
+    .css-te8l37 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 .css-1cisd6t {
     box-sizing: border-box;
     margin: 0;
@@ -1495,5 +1500,11 @@ body {
     margin-right: 0;
 }
 
-
+@media screen and (min-width:767px) {
+    .css-1cisd6t {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 24px;
+    }
+}
                     /*Right Items END*/

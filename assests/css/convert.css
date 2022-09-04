@@ -1,7 +1,9 @@
-:root{
-    --color1:#72768F;
-    --color2:#B2B4C6;
+:root {
+    --color1: #72768F;
+    --color2: #B2B4C6;
 }
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +11,7 @@
 body {
     background: linear-gradient(190deg, #161623,
             #161624);
+    font-size: 16px !important;
 }
 
 .container {
@@ -25,7 +28,7 @@ body {
 }
 
 /* main box START */
-#main-box{
+#main-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +66,8 @@ body {
     background-color: #1E1F31;
     border-radius: 12px;
 }
-.swap-box i.bx-transfer-alt{
+
+.swap-box i.bx-transfer-alt {
     color: #584CEA;
     cursor: pointer;
     font-size: 25px;
@@ -74,9 +78,10 @@ body {
 }
 
 /* swap item SRART*/
-.swap-item{
-    min-width:100%;
+.swap-item {
+    min-width: 100%;
 }
+
 /* swap top part START */
 
 .swap-top-part {
@@ -101,13 +106,16 @@ body {
 /* swap main item box START */
 .swap-main-item-box {
     display: flex;
-    position: relative; /* for .currency-selector-relative-box::before */
+    position: relative;
+    /* for .currency-selector-relative-box::before */
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     padding: 15px;
     border-radius: 5px;
     background-color: #2D2E3F;
+
+
 }
 
 .swap-main-item-box:hover {
@@ -134,17 +142,83 @@ input#value::placeholder {
 
 /* currency selector relative box START*/
 
-.currency-selector-relative-box{
+.currency-selector-relative-box {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    padding-left:10px;
+    padding: 10px 0 10px 0;
     margin-left: 5px;
     gap: 5px;
     color: white;
     font-size: 14px;
 
 }
+
+/* menu for each coin selection START */
+.currency-selector-relative-box>ul {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 100%;
+    background-color: #1a1b30;
+    z-index: 2;
+    border-radius: 5px;
+    height: 270px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 1px 1px 5px 1px #2D2E3F;
+    display: none;
+}
+
+.currency-selector-relative-box>ul>li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+
+
+}
+
+.currency-selector-relative-box>ul>li:hover {
+    background: #2D2E3F;
+}
+
+.currency-selector-relative-box>ul>li img {
+
+    margin: 0 5px 0 15px;
+
+
+}
+
+.currency-selector-relative-box>ul>li:first-of-type {
+    border-bottom: 1px solid #72768F;
+    padding: 5px 0;
+
+}
+
+
+
+.currency-selector-relative-box>ul>li:first-of-type i {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 5px;
+
+}
+
+.currency-selector-relative-box>ul>li>input {
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    color: #72768F;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+/* menu for each coin selection END */
+
 .currency-selector-relative-box::before {
     content: "";
     position: absolute;
@@ -156,22 +230,25 @@ input#value::placeholder {
     margin-right: 15px;
     vertical-align: middle;
 }
-.currency-selector-relative-box img{
+
+.currency-selector-relative-box img {
     max-width: 20px;
 }
-.currency-selector-relative-box i{
+
+.currency-selector-relative-box i {
     font-size: 10px;
     padding-left: 5px;
     color: var(--color1);
 }
+
 /* currency selector relative box END*/
 /* swap main item box END */
 /* submit START */
-.submit{
+.submit {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: linear-gradient(93.96deg,#E05FBB 0.76%,#4250F4 100.57%);
+    background-image: linear-gradient(93.96deg, #E05FBB 0.76%, #4250F4 100.57%);
     margin-top: 70px;
     padding: 18px 20px;
     font-size: 14px;
@@ -179,28 +256,52 @@ input#value::placeholder {
     color: white;
     cursor: pointer;
 }
+
 /* submit END */
 /* swap item END*/
 /* FAQ START */
-#faq{
+#faq {
     min-width: 35%;
 }
-#faq h2{
+
+#faq h2 {
     color: var(--color1);
     font-size: 24px;
 }
+
 /* faq-questions START*/
-.faq-questions{
+.faq-questions {
+    cursor: pointer;
     color: white;
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     margin-top: 20px;
+    padding: 10px 5px;
 }
-.faq-questions i{
+
+.faq-questions p {
+    margin: 0 0 10px 0;
+    line-height: 25px;
+}
+
+.faq-questions p:last-of-type {
+    color: #B2B4C6;
+}
+
+.faq-questions i {
     color: var(--color1);
     font-size: 18px;
-    padding-right: 10px;
+    margin: 4px 5px 0 0;
 }
+
+/* answers pop-up  START */
+.a-menu {
+    height: 0;
+    overflow: hidden;
+}
+
+/* answers pop-up  END */
+
 /* faq-questions END*/
 /* FAQ END */
 /* swap box END*/

@@ -147,7 +147,20 @@
                             <div class="currency-selector-relative-box">
                                 <img src="../images/convertImages/usdt.svg" alt="">
                                 USDT
-                             <i class='bx bxs-down-arrow' ></i>
+                                <i class='bx bxs-down-arrow'></i>
+                                <ul class="coin-menu">
+                                    <li> <i class='bx bx-search'></i> <input type="text"> </li>
+                                    <li><img src="../images/convertImages/ada.svg">ADA</li>
+                                    <li><img src="../images/convertImages/btc.svg">BTC</li>
+                                    <li><img src="../images/convertImages/doge.svg">DOGE</li>
+                                    <li><img src="../images/convertImages/sol.svg">SOL</li>
+                                    <li><img src="../images/convertImages/trx.svg">TRX</li>
+                                    <li><img src="../images/convertImages/bnb.svg">BNB</li>
+                                    <li><img src="../images/convertImages/xrp.svg"> XRP</li>
+                                    <li><img src="../images/convertImages/usdt.svg">USDT</li>
+                                    <li><img src="../images/convertImages/eth.svg">ETH</li>
+                                    <li><img src="../images/convertImages/btc.svg">BTC</li>
+                                </ul>
                             </div>
                         </div>
                         <i class='bx bx-transfer-alt'></i>
@@ -161,32 +174,70 @@
                             <div class="currency-selector-relative-box">
                                 <img src="../images/indexImages/BTC.png" alt="">
                                 BTC
-                             <i class='bx bxs-down-arrow' ></i>
+                                <i class='bx bxs-down-arrow'></i>
+                                <ul class="coin-menu">
+                                    <li> <i class='bx bx-search'></i> <input type="text"> </li>
+                                    <li><img src="../images/convertImages/doge.svg">DOGE</li>
+                                    <li><img src="../images/convertImages/bnb.svg">BNB</li>
+                                    <li><img src="../images/convertImages/sol.svg">SOL</li>
+                                    <li><img src="../images/convertImages/btc.svg">BTC</li>
+                                    <li><img src="../images/convertImages/trx.svg">TRX</li>
+                                    <li><img src="../images/convertImages/btc.svg">BTC</li>
+                                    <li><img src="../images/convertImages/xrp.svg"> XRP</li>
+                                    <li><img src="../images/convertImages/usdt.svg">USDT</li>
+                                    <li><img src="../images/convertImages/eth.svg">ETH</li>
+                                    <li><img src="../images/convertImages/ada.svg">ADA</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="submit">
-                        Preview Conversion
+                        Enter an amount
                     </div>
                 </div>
                 <div id="faq">
                     <h2>FAQ</h2>
                     <div class="faq-questions">
                         <i class='bx bxs-plus-circle'></i>
-                        <p>1. What are the minimum and maximum trade amounts?</p>
+                        <div id="qa">
+                            <p> 1. What are the minimum and maximum trade
+                                amounts?</p>
+                            <p class="a-menu">The minimum trade amount is generally an equivalent value of 10 USDT worth of coins.
+                                Minimum
+                                and maximum trade amounts will be dependent on the coin / pair and can be previewed
+                                before
+                                entering in a trade amount.</p>
+                        </div>
+
                     </div>
                     <div class="faq-questions">
                         <i class='bx bxs-plus-circle'></i>
-                        <p>2. How do I make deposits and withdrawals for instant trades?</p>
+                        <div id="qa">
+                            <p>2. How do I make deposits and withdrawals for instant trades?</p>
+                            <p class="a-menu">There is no separate wallet for instant trades. Simply make deposits and withdrawals to /
+                                from your account’s funding wallet.</p>
+                        </div>
+
                     </div>
                     <div class="faq-questions">
                         <i class='bx bxs-plus-circle'></i>
-                        <p>3.Are there any trading fees?</p>
+                        <div id="qa">
+                            <p>3.Are there any trading fees?</p>
+                            <p class="a-menu">We do not charge any fees on instant trades.</p>
+                        </div>
+
                     </div>
 
                     <div class="faq-questions">
                         <i class='bx bxs-plus-circle'></i>
-                        <p>4. I received an “insufficient funds” error?</p>
+                        <div id="qa">
+                            <p>4. I received an “insufficient funds” error?</p>
+                            <p class="a-menu">To confirm an instant trade, you must have the required amount of coins that you are
+                                selling in your account. For example, if you want to buy 10 BTC with USDT and the price
+                                per BTC is 10,000 USDT, then you must have at least 100,000 USDT in your account to
+                                confirm the trade.</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -250,5 +301,6 @@
 </body>
 <!-- js links -->
 <script src="../js/header-footer.js"></script>
+<script src="../js/convert.js"></script>
 
 </html>

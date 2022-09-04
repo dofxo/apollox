@@ -36,18 +36,31 @@ for (let i = 0; i < faqDiv.length; i++) {
     })
 }
 // faq icon bg color change 
-const plusIconClass = document.getElementsByClassName('bxs-plus-circle')
-
-
+const plusIconClass = document.getElementsByClassName('plus-icon')
+const aMenu = document.getElementsByClassName('a-menu')
+let colorChanged = false
 function IconAndBackgroundColorChange(indexNumber) {
+
     faqDiv[indexNumber].addEventListener('click', () => {
-        if (plusIconClass[indexNumber].style.color != '') {
-            plusIconClass[indexNumber].style.color = ''
-        } else {
-            plusIconClass[indexNumber].style.color = ''
+        if (colorChanged === false) {
+            plusIconClass[indexNumber].style.color = '#5376f6'
+            plusIconClass[indexNumber].classList.add('bxs-minus-circle')
+            plusIconClass[indexNumber].classList.remove('bxs-plus-circle')
+            aMenu[indexNumber].style.height = '100%'
+            colorChanged = true
+        }
+        else {
+            plusIconClass[indexNumber].style.color = '#72768F'
+            plusIconClass[indexNumber].classList.remove('bxs-minus-circle')
+            plusIconClass[indexNumber].classList.add('bxs-plus-circle')
+            aMenu[indexNumber].style.height = '0'
+            colorChanged = false
         }
     })
 
 }
-IconAndBackgroundColorChange(0)
+IconAndBackgroundColorChange(0), IconAndBackgroundColorChange(1), IconAndBackgroundColorChange(2), IconAndBackgroundColorChange(3)
+
+
+
 // FAQ answers pop up/out END

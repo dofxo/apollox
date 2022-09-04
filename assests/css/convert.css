@@ -15,8 +15,15 @@ body {
 }
 
 .container {
-    width: 1100px;
+    width: 90%;
     margin: 0 auto;
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
 }
 
 /* main START */
@@ -24,7 +31,8 @@ body {
     background-image: url(../images/convertImages/main\ bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
+    padding: 100px 0 20% 0;
+
 }
 
 /* main box START */
@@ -57,8 +65,6 @@ body {
     flex-direction: column;
     padding: 80px;
     min-width: 60%;
-
-
     background-image: url(../images/convertImages/main-box-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,6 +120,7 @@ body {
     padding: 15px;
     border-radius: 5px;
     background-color: #2D2E3F;
+
 
 
 }
@@ -298,10 +305,35 @@ input#value::placeholder {
 .a-menu {
     height: 0;
     overflow: hidden;
+
 }
+
+
 
 /* answers pop-up  END */
 
+/* media query start */
+@media screen and (max-width:840px) {
+    #main-box {
+        flex-direction: column;
+
+    }
+    .swap-box {
+ 
+        min-width: 100%;
+        padding: 20px 20px;
+     
+    }
+    input#value::placeholder{
+        font-size: 10px;
+    }
+    #max {
+        display: none;
+    }
+
+}
+
+/* media query END */
 /* faq-questions END*/
 /* FAQ END */
 /* swap box END*/

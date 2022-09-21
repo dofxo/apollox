@@ -305,6 +305,7 @@ input#value::placeholder {
 .a-menu {
     height: 0;
     overflow: hidden;
+    transition: 0.3s;
 
 }
 
@@ -318,15 +319,18 @@ input#value::placeholder {
         flex-direction: column;
 
     }
+
     .swap-box {
- 
+
         min-width: 100%;
         padding: 20px 20px;
-     
+
     }
-    input#value::placeholder{
+
+    input#value::placeholder {
         font-size: 10px;
     }
+
     #max {
         display: none;
     }

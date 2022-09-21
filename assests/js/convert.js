@@ -46,7 +46,8 @@ function IconAndBackgroundColorChange(indexNumber) {
             plusIconClass[indexNumber].style.color = '#5376f6'
             plusIconClass[indexNumber].classList.add('bxs-minus-circle')
             plusIconClass[indexNumber].classList.remove('bxs-plus-circle')
-            aMenu[indexNumber].style.height = '100%'
+            aMenu[indexNumber].style.height = '100px'
+            aMenu[2].style.height = '30px'
             colorChanged = true
         }
         else {

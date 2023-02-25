@@ -65,12 +65,14 @@ body {
     flex-direction: column;
     padding: 80px;
     min-width: 60%;
+    height: fit-content;
     background-image: url(../images/convertImages/main-box-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1E1F31;
     border-radius: 12px;
+
 }
 
 .swap-box i.bx-transfer-alt {

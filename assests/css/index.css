@@ -1143,11 +1143,13 @@ section:not(#rowOne, #apx-community) {
     .apx-community-socials a i {
         font-size: 30px;
     }
+
     .social-media-relative-box {
         min-width: 150px;
         top: 110%;
         padding: 8px 0;
     }
+
     .social-media-relative-box p {
         font-size: 12px;
         padding: 10px 5px 20px 10px;
@@ -1223,6 +1225,7 @@ section:not(#rowOne, #apx-community) {
     .apx-community-title p:last-of-type {
         font-size: 15px;
     }
+
     .socials {
         padding: 5px;
         width: 130px;
